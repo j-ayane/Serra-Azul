@@ -18,7 +18,7 @@ header {
     background-size: cover;
     background-position: center;
     color: #fcfcfc;
-    background-image: url('/img/ceu.jpg'); /* Corrija o caminho da imagem */
+    background-image: url('../img/ceu.jpg'); /* Corrija o caminho da imagem */
     opacity: 0.5;
     height: 30vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
