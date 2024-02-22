@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f1f37;
+}
+
+/* Classes */
+
+.pri {
+    font-family: Amaranth, sans-serif;
+}
+.sec {
+    font-family: "Lexand Deca", sans-serif;
+}
+
+.container {
+    margin: 10px 150px;
+    height: 100%;
+}
+
+
+.foto {
+    width: 180px;
+    height: 180px;
+    float: left;
+    margin: 10px 25px 25px 10px;
+    position: relative;
+}
+
+.ft-hov {
+    opacity: 0;
+    color: white;
+    width: 180px;
+    height: 180px;
+    float: left;
+    background-color: rgba(3, 0, 0, 0.500);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+.ft-hov:hover {
+    opacity: 1;
+    transition: 100ms;
+}
+
+.res {
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d9d9d9;
+    color: #0f1f37;
+    font-weight: 600;
+    margin: 15px;
+    cursor: pointer;
+}
+.res:hover{
+    font-size: 15px;
+    width: 90px;
+    box-shadow: 2px 2px 4px rgb(71, 71, 71);
+    transition: 100ms;
+}
+
+.pct {
+    color: #0f1f37;
+}
+.pct p{
+    font-size: 14px;
+    margin: 10px;
+}
+.pct h2{
+    margin-top: 15px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0px;
+    background-color: #448b98;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.btn:hover{
+    box-shadow: 2px 2px 5px black;
+    font-size: 18px;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+/* IDs */
+
+#pacotes {
+padding: 45px;
+background-color: #d9d9d9;
+display: flex;
+flex-direction: column;
+}
+
+#header{
+    padding: 20px 50px;
+    color: white;
+}
