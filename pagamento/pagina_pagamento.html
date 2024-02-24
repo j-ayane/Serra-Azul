@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pagamento</h1>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required>
+
+            <label for="numero-cartao">Número do Cartão:</label>
+            <input type="text" id="numero-cartao" name="numero-cartao" placeholder="Digite o número do cartão" required>
+
+            <label for="data-vencimento">Data de Vencimento (MM/AAAA):</label>
+            <input type="month" id="data-vencimento" name="data-vencimento" required>
+
+            <label for="codigo-seguranca">Código de Segurança:</label>
+            <input type="text" id="codigo-seguranca" name="codigo-seguranca" placeholder="Digite o código de segurança" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+
+            <label for="parcelas">Parcelar em:</label>
+            <select id="parcelas" name="parcelas">
+                <option value="1">1x sem juros</option>
+                <option value="2">2x sem juros</option>
+                <option value="3">3x sem juros</option>
+                <option value="6">6x sem juros</option>
+                <option value="12">12x sem juros</option>
+                <option value="24">24x sem juros</option> <!-- Adicionando a opção de 24x sem juros -->
+            </select>
+            <a href="pagina_confirmacao_reserva.html"><button type="submit">Confirmar reserva</button></a> 
+        </form>
+    </div>
+</body>
+
+</html>
