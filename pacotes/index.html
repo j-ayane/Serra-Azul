@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="tit pri">
+                <button type="button">&#60</button>
+                <h3>Pacote 1</h3>
+            </div>
+            <hr>
+        </div>
+        <div class="slides">
+            <div class="slds">
+                <button type="button" onclick="plusDivs(-1)">&#10094</button>
+                <div class="slideOn">Slide 1</div>
+                <div class="slideOn">Slide 2</div>
+                <div class="slideOn">Slide 3</div>
+                <div class="slideOn">Slide 4</div>
+                <button type="button" onclick="plusDivs(1)">&#10095</button>
+            </div>
+            <div>
+                <span class="bola" onclick="currentDiv(1)"></span>
+                <span class="bola" onclick="currentDiv(2)"></span>
+                <span class="bola" onclick="currentDiv(3)"></span>  
+                <span class="bola" onclick="currentDiv(4)"></span>  
+            </div>
+        </div>
+        <div class="corpo">
+            <p class="sec">Ut risus eleifend tincidunt ut ligula pulvinar augue, interdum tempus fusce tempor habitasse suspendisse non, maecenas congue augue eu quam bibendum. nunc aenean aptent sollicitudin elit ornare vehicula curabitur id, ultrices gravida dictum eros curabitur donec nullam tristique, porta arcu egestas dui sapien hendrerit faucibus. nisl fames imperdiet suspendisse nunc ipsum non torquent suscipit, ligula donec dictumst tristique velit iaculis at cubilia pharetra, condimentum consequat morbi fusce dictum vulputate at.</p>
+            <div class="incl">
+                <h2 class="pri">Incluso no pacote:</h2>
+            </div>
+           <div class="ops sec"> 
+                <div class="ops-div">
+                    <div class="ico">
+                        <img src="imgs/icon _wifi_.png" alt="Wifi">
+                        <p>Wifi</p>
+                    </div>
+                    <div class="ico"> 
+                        <img src="imgs/icon _sofa_.png" alt="Sofá">
+                        <p>Conforto</p>
+                    </div>
+                </div> 
+                <div class="ops-div">
+                    <div class="ico">
+                        <img src="imgs/icon _coffee cup_.png" alt="Xicara">
+                        <p>Café da manhã</p>
+                    </div>
+                    <div class="ico"> 
+                        <img src="imgs/icon _sea waves_.png" alt="Ondas">
+                        <p>Acesso à piscina</p>
+                    </div>
+                </div>
+            </div>
+            <div class="reserve">
+                <button type="button" class="pri">Reservar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
