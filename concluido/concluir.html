@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concluir Pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Concluir Pagamento</h1>
+        <div id="info-pagamento">
+            <!-- As informações preenchidas serão exibidas aqui -->
+        </div>
+
+        <button type="button" onclick="voltarPagina()">Voltar</button>
+        <button id="botao-proximo">Concluir Compra</button>
+
+        <!-- Modal de confirmação -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Deseja realmente finalizar a compra?</p>
+                <button id="confirmar">Sim</button>
+                <button id="cancelar">Cancelar</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

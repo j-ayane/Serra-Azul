@@ -1,40 +1,93 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #030122;
-    text-shadow:rgb(27, 7, 67) 2px 2px;    
 }
 
 .container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
-    background-color:#2a4469;
-    color: #fff;
-    border-radius: 8px;
+    color: #bcd4eef8;
+    background-color: #2a4469;
+    ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 h1 {
     text-align: center;
 }
 
-#payment-details {
-    margin-top: 20px;
-}
-
-#payment-details p {
-    margin-bottom: 10px;
+input,
+select {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 button {
-    padding: 10px;
-    width: 89px;
-    background-color: #768191;
-    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #65819e;
+    color: #fcfcfc;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
-    box-shadow: #051b3b 2px 2px;
 }
+
 button:hover {
-    background-color: #000000;
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
+}
+
+.modal {
+    display: none;
+    /* Esconde o modal por padrão */
+    position: fixed;
+    /* Fica posicionado na tela */
+    z-index: 1;
+    /* Sobre todas as outras coisas */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 34, 85, 0.5);
+    /* Fundo escuro */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2a4469;
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* Centraliza na tela */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius:10px;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #9b9797;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }

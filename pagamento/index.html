@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Pagamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Página de Pagamento</h1>
+        <form id="form-pagamento">
+            <label for="nome">Nome registrado no cartão:</label>
+            <input type="text" id="nome" required>
+            <label for="numeroCartao">Número do Cartão:</label>
+            <input type="text" id="numero-cartao" required>
+            <div class="bandeiras-cartao">
+                <div class="bandeiras-cartao">
+                    <label for="visa">
+                        <img src="../pagamento/imagens/visa.png.png" alt="Visa">
+                        <input type="radio" id="visa" name="bandeira" value="Visa" hidden>
+                    </label>
+                    <label for="mastercard">
+                        <img src="../pagamento/imagens/mastercard.png.png" alt="Mastercard">
+                        <input type="radio" id="mastercard" name="bandeira" value="Mastercard" hidden>
+                    </label>
+                    <label for="amex">
+                        <img src="../pagamento/imagens/amex.png.png" alt="Amex">
+                        <input type="radio" id="amex" name="bandeira" value="Amex" hidden>
+                    </label>
+                        <img src="../pagamento/imagens/nubank.png.png" alt="nubank">
+                        <input type="radio" id="nubank" name="bandeira" value="nubank" hidden>
+                    </label>
+                        <img src="../pagamento/imagens/elo.png.png" alt="elo">
+                        <input type="radio" id="elo" name="bandeira" value="elo" hidden>
+                    </label>
+                        <img src="../pagamento/imagens/pix.png.png" alt="Amex">
+                        <input type="radio" id="pix" name="bandeira" value="pix" hidden>
+                    </label>
+                        <img src="../pagamento/imagens/hipercard.png.png" alt="hipercard">
+                        <input type="radio" id="hipercard" name="bandeira" value="hipercard" hidden>
+                    </label>
+                </div>
+    
+            </div>
+            <label for="data-vencimento">Data de Vencimento (MM/AAAA):</label>
+            <input type="month" id="data-vencimento" name="data-vencimento" required>
+            <label for="codigoSeguranca">Código de Segurança:</label>
+            <input type="text" id="codigo-seguranca" required>
+            
+
+            <button type="button" onclick="proximaPagina()">Próximo</button>
+        </form>
+        
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

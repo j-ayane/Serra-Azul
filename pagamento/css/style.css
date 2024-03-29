@@ -1,54 +1,74 @@
 body {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #0F1F37;
-    text-shadow: rgb(71, 64, 85) 2px 2px;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #030122;
 }
 
 .container {
-    
-    max-width: 400px;
+    max-width: 600px;
     margin: 50px auto;
     padding: 20px;
+    color: #bcd4eef8;
     background-color: #2a4469;
-    color: #ffffff;
-    border-radius: 8px;
-    
+    ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 h1 {
     text-align: center;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    
-}
-
-label {
-    margin-bottom: 7px;
-    
-}
-
-input[type="text"],
+input,
 select {
-    padding: 8px;
-    border:none;
-    margin-bottom: 16px;
-    border-radius: 10px;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
+
+.bandeiras-cartao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bandeiras-cartao img {
+    width: px;
+    margin-right: 17px;
+    margin-block-end: 25px;
+    height: 30px;
+    color: #fcfcfc;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.bandeiras-cartao img:hover {
+    transform: scale(1.5);
+
+}
+
 
 button {
-    padding: 10px;
-    background-color:#768191;;
-    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #65819e;
+    color: #fcfcfc;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
     cursor: pointer;
-    box-shadow: #051b3b 2px 2px;
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004080;
 }
